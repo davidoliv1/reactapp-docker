@@ -13,6 +13,6 @@ RUN yarn build
 
 # RUN PHASE
 FROM nginx
-
+EXPOSE 80
 COPY --from=build /app/dist /usr/share/nginx/html
 
